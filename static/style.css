@@ -114,7 +114,7 @@ ul { list-style: none; margin: 0; padding: 0; }
   padding: 0;
 }
 
-.theme-toggle-label { text-transform: lowercase; }
+.theme-toggle-label { text-transform: capitalize; }
 
 .theme-toggle-track {
   position: relative;

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wahab — Portfolio</title>
+<meta name="description" content="Portfolio of Your Name.">
+
+<!-- Fonts: Fraunces (display), Inter (body), JetBrains Mono (labels) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300..700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ TOP BAR ============ -->
+<header class="topbar">
+  <span class="logo">YN<span class="logo-dot">.</span></span>
+
+  <nav class="nav">
+    <a href="#about">about</a>
+    <a href="#skills">skills</a>
+    <a href="#projects">projects</a>
+    <a href="#contact">contact</a>
+  </nav>
+
+  <!-- Signature element: theme toggle styled as a labeled rocker switch -->
+  <button id="theme-toggle" class="theme-toggle" aria-label="Toggle light and dark mode" aria-pressed="false">
+    <span class="theme-toggle-label">light</span>
+    <span class="theme-toggle-track">
+      <span class="theme-toggle-thumb"></span>
+    </span>
+    <span class="theme-toggle-label">dark</span>
+  </button>
+</header>
+
+<main>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="hero-text">
+      <p class="eyebrow">&gt;&gt; portfolio</p>
+      <h1 class="hero-name">Your<br>Name</h1>
+      <p class="hero-title">Your Role / Title</p>
+      <p class="hero-tagline">
+        A one- or two-sentence line about what you do, who you help,
+        and what makes your work distinct. Keep it short and confident.
+      </p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary">Get in touch</a>
+        <a href="#projects" class="btn btn-ghost">See my work</a>
+      </div>
+    </div>
+
+    <div class="hero-photo">
+      <!-- EDIT: place your image at static/profile.jpg -->
+      <img src="static/profile.jpg" alt="Portrait of Your Name" id="profile-img"
+           onerror="this.style.display='none'; document.getElementById('profile-fallback').style.display='flex';">
+      <div id="profile-fallback" class="photo-fallback">
+        <span>YN</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section id="about" class="section">
+    <p class="eyebrow">&gt;&gt; about</p>
+    <p class="section-lead">
+      Write two to four sentences here about your background, what you care about,
+      and the kind of work you're looking for. Keep the tone conversational —
+      this is the part people actually read.
+    </p>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section id="skills" class="section">
+    <p class="eyebrow">&gt;&gt; skills</p>
+    <ul class="skills-list">
+      <li>Skill One</li>
+      <li>Skill Two</li>
+      <li>Skill Three</li>
+      <li>Skill Four</li>
+      <li>Skill Five</li>
+    </ul>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section id="projects" class="section">
+    <p class="eyebrow">&gt;&gt; projects</p>
+
+    <div class="projects-grid">
+      <a href="#" class="project-card" target="_blank" rel="noopener">
+        <div class="project-card-top">
+          <h3>Project One</h3>
+          <span class="project-arrow">&#8599;</span>
+        </div>
+        <p>One line describing what this project is and the impact it had.</p>
+      </a>
+
+      <a href="#" class="project-card" target="_blank" rel="noopener">
+        <div class="project-card-top">
+          <h3>Project Two</h3>
+          <span class="project-arrow">&#8599;</span>
+        </div>
+        <p>One line describing what this project is and the impact it had.</p>
+      </a>
+
+      <a href="#" class="project-card" target="_blank" rel="noopener">
+        <div class="project-card-top">
+          <h3>Project Three</h3>
+          <span class="project-arrow">&#8599;</span>
+        </div>
+        <p>One line describing what this project is and the impact it had.</p>
+      </a>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section id="contact" class="section contact-section">
+    <p class="eyebrow">&gt;&gt; contact</p>
+    <p class="section-lead">Let's talk. Reach out directly below.</p>
+
+    <div class="contact-links">
+      <!-- EDIT: replace with your real email — opens Gmail compose in a new tab -->
+      <a class="contact-link"
+         id="email-link"
+         href="https://mail.google.com/mail/?view=cm&fs=1&to=you@example.com"
+         target="_blank" rel="noopener"
+         data-email="you@example.com">
+        <span class="contact-icon">&#9993;</span>
+        <span class="contact-value">you@example.com</span>
+      </a>
+
+      <!-- EDIT: replace with your real phone number — opens the phone dialer -->
+      <a class="contact-link"
+         id="phone-link"
+         href="tel:+10000000000"
+         data-phone="+1 (000) 000-0000">
+        <span class="contact-icon">&#9742;</span>
+        <span class="contact-value">+1 (000) 000-0000</span>
+      </a>
+    </div>
+
+    <div class="socials">
+      <a href="#" target="_blank" rel="noopener">GitHub</a>
+      <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="#" target="_blank" rel="noopener">Twitter</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <span>&copy; <span id="year"></span> Your Name</span>
+  <span class="footer-status"><span class="status-dot"></span> open to work</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
